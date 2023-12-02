@@ -1,12 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.fallenbreath.template_mod.mixins",
+  "package": "cn.dancingsnow.mcdrc.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
-    "MinecraftServerMixin"
+    "ServerPlayNetworkHandlerMixin"
   ],
   "client": [
+    "client.ChatInputSuggestorMixin"
   ],
   "injectors": {
     "defaultRequire": 1

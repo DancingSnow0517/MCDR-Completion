@@ -6,27 +6,34 @@
   "name": "${name}",
   "description": "Template for my fabric mods",
   "authors": [
-    "Fallen_Breath"
+    "DancingSnow"
   ],
   "contact": {
     "homepage": "https://modrinth.com",
-    "sources": "https://github.com/Fallen-Breath/fabric-mod-template"
+    "sources": "https://github.com/DancingSnow0517/MCDR-Completion"
   },
 
-  "icon": "assets/template_mod/icon.png",
+  "icon": "assets/mcdrc/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.fallenbreath.template_mod.TemplateMod"
+      "cn.dancingsnow.mcdrc.MCDRCompletion"
+    ],
+    "client": [
+      "cn.dancingsnow.mcdrc.client.MCDRCompletionClient"
+    ],
+    "server": [
+      "cn.dancingsnow.mcdrc.server.MCDRCompletionServer"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "mcdrc.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.4",
+    "fabric": "*",
     "minecraft": "${minecraft_dependency}"
   }
 }
